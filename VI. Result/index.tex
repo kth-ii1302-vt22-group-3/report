@@ -1,12 +1,13 @@
 
-\section{Resultat}
-Tabellen nedan listar bedömda ”områden” och subjektiv värdering gentemot deras bidrag 
-till Åstadkommer/skapar projektet rätt saker (validitet) och konstrueras lösningar på 
-bästa sätt (reliabilitet)? Alternativa arbetssätt och del-projektmetoder anges också.
+\section{Result}
+% Tabellen nedan listar bedömda ”områden” och subjektiv värdering gentemot deras bidrag 
+% till Åstadkommer/skapar projektet rätt saker (validitet) och konstrueras lösningar på 
+% bästa sätt (reliabilitet)? Alternativa arbetssätt och del-projektmetoder anges också.
 
-Fullständiga tabeller finns i bilagor. Där finns också den evidens som ligger till 
-grund för listade omdömen. Positiva omdömen anges med grönt, negativa med rött och 
-neutrala omdömen med gult. 
+% Fullständiga tabeller finns i bilagor. Där finns också den evidens som ligger till 
+% grund för listade omdömen. Positiva omdömen anges med grönt, negativa med rött och 
+% neutrala omdömen med gult. 
+During the project a number of different methods and practices were used to structure and guide the work within the project. These methods and practices varied in scope and area of application, ranging from initial definition of the project to structuring of the development process to finalizing development into a finished product. In order to ascertain which of these were suitable for use in small IT projects, they were all subjectively evaluated by the group. The results of this evaluation were then compiled into a table, shown here as Table \ref{tab-results}. Each method or practice was given a grade of either GOOD, MIXED or BAD and the grades color coded with green, yellow and red, respectively. For all non-good grades suggestions for alternative methods or practices were added.
 
 % Here you can define your own colors to use in the table. 
 \definecolor{green}{RGB}{146,208,80}
@@ -14,104 +15,311 @@ neutrala omdömen med gult.
 \definecolor{yellow}{RGB}{255,255,0}
 \definecolor{grey}{RGB}{217,217,217}
 \begin{table}[htbp]
-\caption{Bedömningar}
 \begin{center}
-\begin{tabular}{|l|l|l|l|}
+\caption{Method and practices evaluation results}
+\label{tab-results}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{llll}
 \hline
-\textbf{Ansvars-}   & \textbf{Arbetssätt/metod}     & \textbf{Omdöme}       & \textbf{Alternativ} \\
-\textbf{område}     & \textbf{praktik/mönster}      & Fördelar och          & \\
-                    &                               & nackdelar             &  \\
-\hline
-Projekt-            &                               &                       & \\
-övergripande        &                               &                       & \\
-\hline
-Projekt-            &                               &                       & \\
-ledning             & Iterativt                     & \cellcolor{green}     & \\
-\hline
-Analytiker          & Arkitektur                    &                       & \\
-\hline
-                    &                               & \cellcolor{pink}      & \\
-\hline
-                    &                               & \cellcolor{yellow}    & \\
-\hline
-                    &                               &                       & \\
-\hline
-\end{tabular}
-\label{tab1}
+\textbf{Area of responsibility} & \textbf{Methodology/Practice} & \textbf{Evaluation} & \textbf{Alternative method/practice}  \\ \hline
+\rowcolor{grey} General                    &                                   &       &                                       \\
+                           & Iterative work flow               & \cellcolor{green} GOOD  &                                       \\
+                           & \textbf{Scrum}                    & \cellcolor{green} GOOD  &                                       \\
+                           & - Board (Digital: GitHub)         & \cellcolor{green} GOOD  &                                       \\
+                           & - Board (Physical: Whiteboard)    & \cellcolor{green} GOOD  &                                       \\
+                           & - Daily stand-ups                 & \cellcolor{green} GOOD  &                                       \\
+                           & - Iteration planning              & \cellcolor{green} GOOD  &                                       \\
+                                & - Story/Task points           & \cellcolor{yellow} MIXED               & Not necessary for smaller IT-projects \\
+                           & - Burndown chart                  & \cellcolor{green} GOOD  &                                       \\
+                           & - Demos                           & \cellcolor{green} GOOD  &                                       \\
+                           & - Retrospectives                  & \cellcolor{green} GOOD  &                                       \\
+\rowcolor{grey} Project management         &                                   &       &                                       \\
+                           & Gantt chart                       & \cellcolor{yellow} MIXED & Integrate timeline in Scrum board     \\
+                           & Alpha States                      & \cellcolor{red} BAD   & Not necessary for smaller IT-projects \\
+                           & Discord channels                  & \cellcolor{green} GOOD  &                                       \\
+\rowcolor{grey} Customer relations/demands &                                   &       &                                       \\
+                           & Vision                            & \cellcolor{green} GOOD  &                                       \\
+                           & Use Cases                         & \cellcolor{green} GOOD  &                                       \\
+\rowcolor{grey} Architecture               &                                   &       &                                       \\
+                           & C4 Model                          & \cellcolor{green} GOOD  &                                       \\
+                           & Use Case Models                   & \cellcolor{yellow} MIXED & Sliced use case model                 \\
+\rowcolor{grey} Development                &                                   &       &                                       \\
+                           & HW/SW teams                       & \cellcolor{green} GOOD  &                                       \\
+                           & \textbf{GitHub}                   & \cellcolor{green} GOOD  &                                       \\
+                           & - Dedicated repositories          & \cellcolor{green} GOOD  &                                       \\
+                           & - Pull request method             & \cellcolor{green} GOOD  &                                       \\
+                           & - Branches for tasks              & \cellcolor{green} GOOD  &                                       \\
+                           & - Continuous integration/delivery & \cellcolor{green} GOOD  &                                       \\
+                           & \textbf{Platforms}                &       &                                       \\
+                           & - Heroku                          & \cellcolor{green} GOOD  &                                       \\
+                           & - STM32CubeIDE                    & \cellcolor{yellow} MIXED & VSCode                                \\
+\rowcolor{grey} Testing                    &                                   &       &                                       \\
+                           & Test Driven Development           & \cellcolor{green} GOOD  &                                       \\ \hline
+\end{tabular}%
+}
 \end{center}
 \end{table}
-
+During development, after each sprint, ways of working used during that sprint were brought up for scrutiny. This was done as a group exercise where group members were able to bring up certain ways of working that they felt needed to be focused on. It could either be to highlight something that was working well, to bring up something that needed to be changed or even stopped, or to propose something new that they felt was missing. In practice this was done by categorizing each of the things brought forward into either START, STOP or CONTINUE. The group would then address each of the added points in turn and discuss, if needed, a way to solve any issues identified with that particular point. For every new sprint the lists from the previous sprint were looked over and any points that still needed addressing were kept, and maybe re-categorized, or removed if the group felt it no longer needed addressing. In fact, even the method for this exercise was evaluated and changed between sprints, as the categories were at the first meeting defined as GOOD, COULD HAVE DONE BETTER and IMPROVEMENTS, but after the first two sprints it was decided to change them to START, STOP or CONTINUE because it was felt that this was a more concise way of naming them. The results of these exercises are presented here in Table \ref{tab-wow}.
 \begin{table}[htbp]
-\caption{"Keep - Problems - Try"\\\textit{Roll - student}}
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
+\caption{Ways of working, SPRINTS 1-4}
+\label{tab-wow}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lll}
 \hline
-\multicolumn{4}{|c|}{\cellcolor{grey}\textbf{"Keep"}}\\
-\hline \rowcolor{grey}
-\textbf{"Keep"}                         & \textbf{Motivation}      & \textbf{Förbättringar} & \textbf{Referenser} \\
-\hline
-                                        &                          &                     & \\
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-
-% This is a separator, since the tables in the .doc-template are labeled as the same table.
-\multicolumn{4}{c}{}\\
-
-\hline
-\multicolumn{4}{|c|}{\cellcolor{grey}\textbf{"Problems - Try"}}\\
-\hline \rowcolor{grey}
-\textbf{"Problem"}                      & \textbf{"Try what?}      & \textbf{Motivering} & \textbf{Referenser} \\
-\hline
-                                        &                          &                     & \\
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-
-% This is a separator, since the tables in the .doc-template are labeled as the same table.
-\multicolumn{4}{c}{}\\
-
-\hline
-\multicolumn{4}{|c|}{\cellcolor{grey}\textbf{"Problems - Skip"}}\\
-\hline \rowcolor{grey}
-\textbf{"Problem"}                      & \textbf{"Skip or}        & \textbf{Motivering} & \textbf{Referenser} \\
-\rowcolor{grey}                         & \textbf{replace, why?"}  &                     &  \\
-\hline
-                                        &                          &                     & \\
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-                                        &                          &                     & \\
-\hline
-\end{tabular}
-\label{tab1}
-\end{center}
+\multicolumn{3}{c}{\cellcolor{grey}\textit{\textbf{SPRINT 1}}}                                                                              \\ \hline
+\textbf{GOOD}                       & \textbf{COULD HAVE DONE BETTER}    & \textbf{IMPROVEMENTS}                            \\ \hline
+Got of to a good start              & Product is not completelly defined & More efficient use if  time                      \\
+Documents ready                     & Information is unclear             & The work board                                   \\
+Everybody shows commitment          & Misguided work efforts             & More zealous use of Scrum method                 \\
+Open discussion                     & Keeping deadlines                  & Powerpoint - begin sooner, different approach    \\
+Participation                       & Work time                          & Expand system architecture                       \\
+Responsability taken                & Daily Scrum meetings               & Add deadlines                                    \\
+High pace                           &                                    & Read up on theory before starting practical work \\
+Scrum                               &                                    & Collect documents in one file                    \\
+                                    &                                    & Appoint tasks according to personal strengths    \\ \hline
+\multicolumn{3}{c}{\cellcolor{grey}\textit{\textbf{SPRINT 2}}}                                                                              \\ \hline
+\textbf{GOOD}                       & \textbf{COULD HAVE DONE BETTER}    & \textbf{IMPROVEMENTS}                            \\ \hline
+Product completelly defined         & More focused work                  & Add more tasks to software team                  \\
+Clearer information                 & More zealous use of Scrum method   & Demo: hardware before software                   \\
+Deadlines                           & Tasks definition of done           & Alpha states                                     \\
+Work time                           & Hardware teams use of GitHub       & Marry GitHub and CubeIDE                         \\
+Daily Scrum meetings                & More clearly defined tasks         & Story points per member                          \\
+More efficient use if  time         &                                    & Read up on theory before starting practical work \\
+Powerpoint                          &                                    & Log progress in burndown right away              \\
+Expanded system architecture        &                                    & Re-prioritize MuSCoW for hardware                \\
+Collect documents in one file       &                                    &                                                  \\
+Alot of progress with software      &                                    &                                                  \\
+Burndown chart                      &                                    &                                                  \\
+Progress with hardware              &                                    &                                                  \\
+Demo                                &                                    &                                                  \\
+Scrum board                         &                                    &                                                  \\
+MuSCoW                              &                                    &                                                  \\
+Finished 75\% of last sprint        &                                    &                                                  \\ \hline
+\multicolumn{3}{c}{\cellcolor{grey}\textit{\textbf{SPRINT 3}}}                                                                              \\ \hline
+\textbf{START}                      & \textbf{STOP}                      & \textbf{CONTINUE}                                \\ \hline
+Acceptance criteria                 & Tasks \textless 4h                 & Prepare report                                   \\
+Preparing Powerpoint earlier        & Tasks for reading up on theory     & Working in different teams                       \\
+Better definition of tasks          &                                    & Sitting together                                 \\
+- Naming                            &                                    & Read up on theory before starting coding         \\
+- Checklist                         &                                    & Mob programming                                  \\
+- Acceptance criteria               &                                    & Ask for help outside the group                   \\
+Package IoT                         &                                    & Daily Scrum meetings                             \\
+Subtasks if needed                  &                                    & Deadlines                                        \\
+Log progress in burndown right away &                                    & Efficient use of work time                       \\
+Balanced work time                  &                                    & Alpha states                                     \\
+                                    &                                    & Agenda for group meetings                        \\ \hline
+\multicolumn{3}{c}{\cellcolor{grey}\textit{\textbf{SPRINT 4}}}                                                                              \\ \hline
+\textbf{START}                      & \textbf{STOP}                      & \textbf{CONTINUE}                                \\ \hline
+Ask for help outside the group      & Getting stuck                      & Follow instructions                              \\
+Planned milestones                  &                                    & Better definition of tasks                       \\
+Implement "unplanned tasks"         &                                    & - Naming                                         \\
+Evaluate time cost of task early    &                                    & - Checklist                                      \\
+Log progress in burndown right away &                                    & - Acceptance criteria                            \\
+Balanced work time                  &                                    & - Subtasks if needed                             \\
+Efficient use of work time          &                                    & - Divide task points for subtasks?               \\
+                                    &                                    & Deadlines                                        \\
+                                    &                                    & Alpha states                                     \\
+                                    &                                    & Daily Scrum meetings                             \\
+                                    &                                    & MOB programming                                  \\
+                                    &                                    & Read up on theory before starting coding         \\
+                                    &                                    & Working in different teams                       \\
+                                    &                                    & Sitting together                                 \\
+                                    &                                    & Agenda for group meetings                        \\
+                                    &                                    & Preparing Powerpoint earlier                    \\ \hline
+\end{tabular}%
+}
 \end{table}
+% \begin{table}[htbp]
+% \caption{Ways of working, SPRINT 1}
+% \label{tab-wow1}
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{lll}
+% \hline
+% \textbf{GOOD}              & \textbf{COULD HAVE DONE BETTER}    & \textbf{IMPROVEMENTS}                            \\ \hline
+% Got of to a good start     & Product is not completelly defined & More efficient use if  time                      \\
+% Documents ready            & Information is unclear             & The work board                                   \\
+% Everybody shows commitment & Misguided work efforts             & More zealous use of Scrum method                 \\
+% Open discussion            & Keeping deadlines                  & Powerpoint - begin sooner, different approach    \\
+% Participation              & Work time                          & Expand system architecture                       \\
+% Responsability taken       & Daily Scrum meetings               & Add deadlines                                    \\
+% High pace                  &                                    & Read up on theory before starting practical work \\
+% Scrum                      &                                    & Collect documents in one file                    \\
+%                           &                                    & Appoint tasks according to personal strengths    \\ \hline
+% \end{tabular}%
+% }
+% \end{table}
+% \begin{table}[htbp]
+% \caption{Ways of working, SPRINT 2}
+% \label{tab-wow2}
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{lll}
+% \hline
+% \textbf{GOOD}                  & \textbf{COULD HAVE DONE BETTER}  & \textbf{IMPROVEMENTS}                            \\ \hline
+% Product completelly defined    & More focused work                & Add more tasks to software team                  \\
+% Clearer information            & More zealous use of Scrum method & Demo: hardware before software                   \\
+% Deadlines                      & Tasks definition of done         & Alpha states                                     \\
+% Work time                      & Hardware teams use of GitHub     & Marry GitHub and CubeIDE                         \\
+% Daily Scrum meetings           & More clearly defined tasks       & Story points per member                          \\
+% More efficient use if  time    &                                  & Read up on theory before starting practical work \\
+% Powerpoint                     &                                  & Log progress in burndown right away              \\
+% Expanded system architecture   &                                  & Re-prioritize MuSCoW for hardware                \\
+% Collect documents in one file  &                                  &                                                  \\
+% Alot of progress with software &                                  &                                                  \\
+% Burndown chart                 &                                  &                                                  \\
+% Progress with hardware         &                                  &                                                  \\
+% Demo                           &                                  &                                                  \\
+% Scrum board                    &                                  &                                                  \\
+% MuSCoW                         &                                  &                                                  \\
+% Finished 75\% of last sprint   &                                  &                                                  \\ \hline
+% \end{tabular}%
+% }
+% \end{table}
+% \begin{table}[htbp]
+% \caption{Ways of working, SPRINT 3}
+% \label{tab-wow3}
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{lll}
+% \hline
+% \textbf{START}                      & \textbf{STOP}                  & \textbf{CONTINUE}                        \\ \hline
+% Acceptance criteria                 & Tasks \textless 4h             & Prepare report                           \\
+% Preparing Powerpoint earlier        & Tasks for reading up on theory & Working in different teams               \\
+% Better definition of tasks          &                                & Sitting together                         \\
+% - Naming                            &                                & Read up on theory before starting coding \\
+% - Checklist                         &                                & Mob programming                          \\
+% - Acceptance criteria               &                                & Ask for help outside the group           \\
+% Package IoT                         &                                & Daily Scrum meetings                     \\
+% Subtasks if needed                  &                                & Deadlines                                \\
+% Log progress in burndown right away &                                & Efficient use of work time               \\
+% Balanced work time                  &                                & Alpha states                             \\
+%                                     &                                & Agenda for group meetings                \\ \hline
+% \end{tabular}%
+% }
+% \end{table}
+% \begin{table}[htbp]
+% \caption{Ways of working, SPRINT 4}
+% \label{tab-wow4}
+% \resizebox{\columnwidth}{!}{%
+% \begin{tabular}{lll}
+% \hline
+% \textbf{START}                      & \textbf{STOP} & \textbf{CONTINUE}                        \\ \hline
+% Ask for help outside the group      & Getting stuck & Follow instructions                      \\
+% Planned milestones                  &               & Better definition of tasks               \\
+% Implement "unplanned tasks"         &               & - Naming                                 \\
+% Evaluate time cost of task early    &               & - Checklist                              \\
+% Log progress in burndown right away &               & - Acceptance criteria                    \\
+% Balanced work time                  &               & - Subtasks if needed                     \\
+% Efficient use of work time          &               & - Divide task points for subtasks?       \\
+%                                     &               & Deadlines                                \\
+%                                     &               & Alpha states                             \\
+%                                     &               & Daily Scrum meetings                     \\
+%                                     &               & MOB programming                          \\
+%                                     &               & Read up on theory before starting coding \\
+%                                     &               & Working in different teams               \\
+%                                     &               & Sitting together                         \\
+%                                     &               & Agenda for group meetings                \\
+%                                     &               & Preparing Powerpoint earlier             \\ \hline
+% \end{tabular}%
+% }
+% \end{table}
+% \begin{table}[htbp]
+% \caption{Bedömningar}
+% \begin{center}
+% \begin{tabular}{|l|l|l|l|}
+% \hline
+% \textbf{Ansvars-}   & \textbf{Arbetssätt/metod}     & \textbf{Omdöme}       & \textbf{Alternativ} \\
+% \textbf{område}     & \textbf{praktik/mönster}      & Fördelar och          & \\
+%                     &                               & nackdelar             &  \\
+% \hline
+% Projekt-            &                               &                       & \\
+% övergripande        &                               &                       & \\
+% \hline
+% Projekt-            &                               &                       & \\
+% ledning             & Iterativt                     & \cellcolor{green}     & \\
+% \hline
+% Analytiker          & Arkitektur                    &                       & \\
+% \hline
+%                     &                               & \cellcolor{pink}      & \\
+% \hline
+%                     &                               & \cellcolor{yellow}    & \\
+% \hline
+%                     &                               &                       & \\
+% \hline
+% \end{tabular}
+% \label{tab1}
+% \end{center}
+% \end{table}
+
+% \begin{table}[htbp]
+% \caption{"Keep - Problems - Try"\\\textit{Roll - student}}
+% \begin{center}
+% \begin{tabular}{|c|c|c|c|}
+% \hline
+% \multicolumn{4}{|c|}{\cellcolor{grey}\textbf{"Keep"}}\\
+% \hline \rowcolor{grey}
+% \textbf{"Keep"}                         & \textbf{Motivation}      & \textbf{Förbättringar} & \textbf{Referenser} \\
+% \hline
+%                                         &                          &                     & \\
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+
+% % This is a separator, since the tables in the .doc-template are labeled as the same table.
+% \multicolumn{4}{c}{}\\
+
+% \hline
+% \multicolumn{4}{|c|}{\cellcolor{grey}\textbf{"Problems - Try"}}\\
+% \hline \rowcolor{grey}
+% \textbf{"Problem"}                      & \textbf{"Try what?}      & \textbf{Motivering} & \textbf{Referenser} \\
+% \hline
+%                                         &                          &                     & \\
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+
+% % This is a separator, since the tables in the .doc-template are labeled as the same table.
+% \multicolumn{4}{c}{}\\
+
+% \hline
+% \multicolumn{4}{|c|}{\cellcolor{grey}\textbf{"Problems - Skip"}}\\
+% \hline \rowcolor{grey}
+% \textbf{"Problem"}                      & \textbf{"Skip or}        & \textbf{Motivering} & \textbf{Referenser} \\
+% \rowcolor{grey}                         & \textbf{replace, why?"}  &                     &  \\
+% \hline
+%                                         &                          &                     & \\
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+%                                         &                          &                     & \\
+% \hline
+% \end{tabular}
+% \label{tab1}
+% \end{center}
+% \end{table}
