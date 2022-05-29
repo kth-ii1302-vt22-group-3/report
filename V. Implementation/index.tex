@@ -2,32 +2,33 @@
 \section{Implementation}
 In the beginning and during the project the group were given ideas and guidelines on which practices that could be applicable to a software development project. Depending on the type and size of a project some practices suit better than others and some practices needs adjustments to gain value for the group. In this section the choices, adjustments and implementation of project practices will be presented.
 
+As suggested in the early lectures of the course the group has mainly used the SCRUM method during the project. Because the project is relatively short, stretching just over 4 iterations at 2 weeks each it was decided that this was a suitable agile method. As preparation to use SCRUM the group members plowed through the SCRUM guide written by Kniberg \cite{kniberg_scrum_2015}. According to the SCRUM guide it's valuable to have a SCRUM master in the group, directing the work in a SCRUM manner but since none of the group members were familiar with the method this was disregarded and the group made an effort to interpret the workflow in a democratic and suitable way for the project. This led to some modifications of the method, the first addressed hear is the physical SCRUM work board. 
 
+The group valued the flexibility of having a cloud based SCRUM board and therefore opted to use the GitHub KanBan board, modified to suit the SCRUM method. After the first iteration the group also added a complementary physical work board  because that facilitated the SCRUM meetings which was done in person at the workstation in Kista. 
 
-I följande kapitel redovisas viktiga beslut, förändringar och anpassningar som gjorts 
-i projektmetod, projektpraktiker, värderingar, beslut mm som gjorts under studiens genomförande.
-(Här kan det vara lämpligt med en indelning i olika ansvarsområden inom projektet?)
+The SCRUM method suggests to organise daily meetings which was initially adopted by the group but later revised to just keep meetings on days when in person meetings were planned. Because the group didn't work full time with the project there were not enough work done each day to support daily meetings. 
+
+Other than the work board, GitHub provided the group with several tools during the project. The group used a GitHub page to gather information and links to associated documents for the project. Repositories ("repo") were used to divide the project in different modules, e.g. one repo for the IOT device and one repo for the webpage. Because of the backgrounds of the groupmembers, coming from different programs at KTH the group also chose to work in two teams. Student from the more hardware focused program TIEDB worked in a hardware team while the students from TIDAB and TIDEA joined the software team. The teams could then work independently in their corresponding repositories. The IOT and HTTP (not used in final product) repository is under the responsibility of the hardware team while the software team had responsibility for the WEB and API repositories.
+
+It is good practice to use a Version Control System (VCS) for software projects and the group naturally chose to use GitHub for this \cite{ian_sommerville_software_nodate}. GitHub uses the distributed VCS GIT which can be controlled via command line but the group members chose to use the "GitHub Desktop" desktop application which has a friendlier interface. 
+
+Next follows some of the implementations the group members have been doing in the area of their roles. 
 
 \subsection{Project Manager (Caroline)}
-Genomförandet av iterationer följer helt och hållet mallen för s k ”sprint” i Scrum [ref] 
-och beskrivs enklast med följande aktivitetsdiagram, se  bild
-\begin{figure}[htbp]
-    \centerline{\includegraphics[max height=250px, max width=250px]{Z. images/sprint.png}}
-    \caption{Iteration/Sprint}
-    \label{fig}
-\end{figure}
+The project manager has the responsibility to lead and coordinate work in the project group. In this role Caroline has been hosting the weekly and daily SCRUM meetings with the group as well as taking greater responsibility during the demonstrations of the product. Caroline has also taken a major role in the writing of the project definition document. 
 
-\subsection{Customer representation (Natasha)}
-Lite innehåll.
+\subsection{Stakeholder representation (Natasha)}
+In a normal project this is the product owner who attends to the group meetings to align the requirements with the work being done by the group. In this school project there are no real stakeholders and therefore the group have been working with a MuSCoW requirements model which the group created \cite{eklund_arbeta_2010}. Natasha has been responsible for making sure the work done by the group has been in compliance with the MuSCoW. She has also been responsible for developing the vision document. 
 
 \subsection{Architecture (Jesper)}
-
+The role of the architect is to develop the architecture for the product, including both software and hardware. There are several views to take into account when creating the architecture and to cover this Jesper followed the C4 model. Based on a primary use case three views where considered applicable for our product, hence discarding the forth most in depth view. The views included in the architectural description consequently includes the System context view, the Container view and the Component view. The document in full is available as an attachment. 
 
 \subsection{Development (Wilhelm)}
-
+The head of design and development has the responsibility to set a framework for the software development in the project. To do this Wilhelm opted to create a software development plan which is also available as an attachment to the report. The software development plan sets rules and framework for software development together with guidelines for some of the tools used by the group. The head of development is also responsible for writing of the component descriptions. The components associated with web, database and API were delegated to members of the software team while the components related to the hardware was completed by Wilhelm.
 
 \subsection{Testing (Arif)}
-
+Arif has been the head of testing in the project taking responsibility for development of valid tests for the components. As a member of the software team Arif developed automated testing structures for the web, database and API. Testing for the hardware components was delegated to the hardware team whom followed the Test Driven Development procedure for all tests. With Arifs experience in GitHub he created and managed the project and repositories while also educating other team members on how to use these tools. 
 
 \subsection{Sustainability (Gustav)}
+As head of sustainability Gustav has taken responsibility for aspects in sustainability, ethics, equality and working environment. To do this Gustav has created the Sustainability Development description which is available as an attachment to the report. He has also been protruding in stressing where the group can take measures in regards to usability, re usability, extensibility and maintainability of the product. These measures are described in the Sustainability Development description. Gustav has also taken responsibility in running the weekly meetings and keeping the groups agendas. 
 
